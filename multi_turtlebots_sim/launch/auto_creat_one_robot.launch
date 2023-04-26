@@ -1,0 +1,16 @@
+<launch>
+  <!-- No namespace here as we will share this description.
+       Access with slash at the beginning -->
+    <!--
+    command="$(find xacro)/xacro.py $(find turtlebot_description)/robots/kobuki_hexagons_asus_xtion_pro.urdf.xacro" />-->
+
+  <!-- BEGIN ROBOT 3-->
+ <include file="$(find crawler_robot_ros)/launch/make_robot_description_and_call_state_publisher_crawler.launch">
+  <arg name="robot_name"  value="robot3"/>
+  <arg name="xcoordinate" value="1.5"/>
+  <arg name="ycoordinate" value="-0.5"/>
+  <arg name="zcoordinate" value="0.03"/>
+  <arg name="modelSdf"    value="model.sdf"/>
+ </include> 
+
+</launch>

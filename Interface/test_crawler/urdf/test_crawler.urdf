@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="test_crawler">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.281319738122083 -0.0199999536533712 -0.106159055842674"
+        rpy="0 0 0" />
+      <mass
+        value="12.7192621971354" />
+      <inertia
+        ixx="0.260102799764317"
+        ixy="-0.000909028802490265"
+        ixz="-0.0119468599271296"
+        iyy="0.57529521161862"
+        iyz="0.00212150730981038"
+        izz="0.710489639266212" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_front_link">
+    <inertial>
+      <origin
+        xyz="1.5691E-13 -0.022189 1.9851E-13"
+        rpy="0 0 0" />
+      <mass
+        value="0.66982" />
+      <inertia
+        ixx="0.0011856"
+        ixy="-1.9675E-17"
+        ixz="5.9152E-18"
+        iyy="0.0020612"
+        iyz="-2.5304E-17"
+        izz="0.0011856" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/left_front_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/left_front_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_front_joint"
+    type="continuous">
+    <origin
+      xyz="-0.043 0.275 -0.146000000000004"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_front_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_front_link">
+    <inertial>
+      <origin
+        xyz="-0.010998 0.028811 0.0012827"
+        rpy="0 0 0" />
+      <mass
+        value="0.66982" />
+      <inertia
+        ixx="0.0011856"
+        ixy="-2.6967E-17"
+        ixz="5.651E-18"
+        iyy="0.0020612"
+        iyz="-1.6955E-17"
+        izz="0.0011856" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/right_front_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/right_front_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_front_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0320015790095129 -0.277 -0.147282702389286"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_front_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="left_rare_link">
+    <inertial>
+      <origin
+        xyz="2.0828E-13 -0.022189 1.4727E-13"
+        rpy="0 0 0" />
+      <mass
+        value="0.66982" />
+      <inertia
+        ixx="0.0011856"
+        ixy="-2.6335E-17"
+        ixz="5.7661E-18"
+        iyy="0.0020612"
+        iyz="-1.8175E-17"
+        izz="0.0011856" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/left_rare_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/left_rare_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rare_joint"
+    type="continuous">
+    <origin
+      xyz="-0.553 0.275 -0.146000000000004"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_rare_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_rare_link">
+    <inertial>
+      <origin
+        xyz="2.0817E-13 0.021811 1.4733E-13"
+        rpy="0 0 0" />
+      <mass
+        value="0.66982" />
+      <inertia
+        ixx="0.0011856"
+        ixy="-2.6202E-17"
+        ixz="5.4236E-18"
+        iyy="0.0020612"
+        iyz="-1.8216E-17"
+        izz="0.0011856" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/right_rare_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/right_rare_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_rare_joint"
+    type="continuous">
+    <origin
+      xyz="-0.553 -0.27 -0.146000000000004"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_rare_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="left_belt_link">
+    <inertial>
+      <origin
+        xyz="-0.29873 0.253 -0.14525"
+        rpy="0 0 0" />
+      <mass
+        value="1.4403" />
+      <inertia
+        ixx="0.0092555"
+        ixy="-1.3285E-18"
+        ixz="-1.1101E-05"
+        iyy="0.077875"
+        iyz="4.6759E-20"
+        izz="0.069084" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/left_belt_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/left_belt_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_belt_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_belt_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_belt_link">
+    <inertial>
+      <origin
+        xyz="-0.29873 -0.248 -0.14525"
+        rpy="0 0 0" />
+      <mass
+        value="1.4403" />
+      <inertia
+        ixx="0.0092555"
+        ixy="-2.5044E-19"
+        ixz="-1.1101E-05"
+        iyy="0.077875"
+        iyz="1.9506E-21"
+        izz="0.069084" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/right_belt_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://test_crawler/meshes/right_belt_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_belt_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_belt_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

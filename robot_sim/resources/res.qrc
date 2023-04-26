@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Image/xiaohui.jpg</file>
+        <file>Image/核电厂.jfif</file>
+        <file>Image/轮式.png</file>
+        <file>Image/履带.png</file>
+        <file>Image/双筒核电站.jfif</file>
+        <file>Image/无人机.png</file>
+        <file>Image/校徽.jfif</file>
+        <file>Image/核电厂3.jpg</file>
+        <file>Image/轮式.jpg</file>
+        <file>Image/履带.jpg</file>
+        <file>Image/无人机.jpg</file>
+        <file>Image/国家自然科学基金委员会.jfif</file>
+        <file>Image/委员会2.jpg</file>
+        <file>Image/委员会.jpg</file>
+    </qresource>
+</RCC>

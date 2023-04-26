@@ -1,0 +1,3 @@
+bool inquiry
+---
+algorithm_msgs/task_state[] task

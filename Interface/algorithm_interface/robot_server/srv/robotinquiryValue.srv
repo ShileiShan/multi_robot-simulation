@@ -1,0 +1,3 @@
+bool inquiry
+---
+algorithm_msgs/robot_state_base[] robot_base

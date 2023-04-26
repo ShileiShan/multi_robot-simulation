@@ -1,0 +1,9 @@
+<launch>
+  
+  <param name="/use_sim_time" value="true" />
+  
+  <!-- start world -->
+  <node name="gazebo" pkg="gazebo_ros" type="gazebo"
+   args="$(find test_environment)/world/indoor_something.world" respawn="false" output="screen" />
+
+</launch>

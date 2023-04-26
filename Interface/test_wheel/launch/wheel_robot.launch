@@ -1,0 +1,19 @@
+<launch>
+  <arg name="ns" default="robot1"/>
+  <arg name="x" default="0"/>
+  <arg name="y" default="0"/>
+  <arg name="z" default="0"/>
+
+
+  <!-- BEGIN ROBOT 1-->
+  <!--param name="tf_prefix" value="robot1_tf" /-->
+  <group ns="$(arg ns)">
+    <param name="robot_description"
+    command="$(find xacro)/xacro --inorder $(find test_wheel)/urdf/test_wheel.urdf.xacro" />
+    <param name="tf_prefix" value="$(arg ns)_tf" />
+    <include file="$(find test_wheel)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x $(arg x) -y $(arg y) -z $(arg z) -Y 0" />
+      <arg name="robot_name"  value="$(arg ns)" />
+    </include>
+  </group>
+</launch>
